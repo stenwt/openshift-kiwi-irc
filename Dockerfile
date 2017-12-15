@@ -25,4 +25,4 @@ RUN ./kiwi build
 
 EXPOSE 7778
 
-CMD ["./kiwi" ]
+CMD ["./kiwi", "-f" ]
