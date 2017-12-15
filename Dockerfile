@@ -19,7 +19,7 @@ WORKDIR KiwiIRC
 
 RUN npm install
 
-RUN cp config.example.js config.js 
+RUN sed 's/127.0.0.1/10.0.0.0/' config.example.js > config.js
 
 RUN ./kiwi build 
 
